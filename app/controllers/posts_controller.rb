@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    psst = Post.create(content: params[:content])
-    render json:{podt:podt}
+    post = Post.create(content: params[:content])
+    render json:{ post: post }
   end
 end
